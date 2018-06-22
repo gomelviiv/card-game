@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Creepster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+
+</head>
+<body>
+<section class="wrapper">
+    <div class="content">
+        <header>
+            <div>
+                <article>
+                    <h1>Death Cards</h1>
+                </article>
+                <nav>
+                    <ul class="header-menu">
+                        <li><a id="top-player" href="#">Top</a></li>
+                        <li><a id="info" href="#">Info</a></li>
+                        <li><a id="registration" href="#">Registration</a></li>
+                        <li><a id='login' href="#">LogIn</a></li>
+                    </ul>
+                </nav>
+                <audio controls class="audio-player">
+                 <source src="../audio/mrachnaya-muzyka1.mp3">
+                 <source src="../audio/mrachnaya-muzyka2.mp3">
+                 <source src="../audio/mrachnaya-muzyka3.mp3">
+                 <source src="../audio/mrachnaya-muzyka4.mp3">
+                 <source src="../audio/mrachnaya-muzyka5.mp3">
+
+                 <p>Ваш браузер не поддерживает аудио</p>
+                 </audio>
+            </div>
+        </header>
+        <main>
+          <section class="field-top-player">
+                <table class="table-results">
+                  <tr>
+                    <td>N</td>
+                    <td>Name</td>
+                    <td>Email</td>
+                    <td>Game 5x2</td>
+                    <td>Game 6x3</td>
+                    <td>Game 8x3</td>
+                    <td>Game Score</td>
+                  </tr>
+                </table>
+          </section>
+           <section class="field-rule">
+                <div>
+                    <form class="form-rule">
+                        <div>
+                            <h1>Death Cards</h1>
+                            <h3>Rules:</h3>
+                            <p>
+                                1) Find the doubled pictures and clean the game arena as quickly as possible. </p>
+                            <p>
+                                2) Each player opens two cards - click on two cards at will. If they
+                                the cards will remain open.
+                            </p>
+                            <p>
+                                3) When the game starts the timer appears
+                            </p>
+                            <p>
+                                4) Choose the cover of the cards, as well as the difficulty of the game
+                            </p>
+                            <p>
+                                5) In order to start playing, please login or register.
+                            </p>
+                            <div>
+                                <button type="button" class="registration-button-login">LOGIN</button>
+                                <button type="button" class="registration-button-registration">REGISTRATION</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+           <section class="field-registration">
+                <form>
+                    <h1>Registration</h1>
+                    <p>
+                        <label><img alt="" src="../images/registration/registration-login.png"><input id="firstName" placeholder="First Name:" required></label>
+                    </p>
+                    <p>
+                        <label><img alt="" src="../images/registration/registration-login.png"><input id="lastName" placeholder="Last Name:" required ></label>
+                    </p>
+                    <p>
+                        <label><img alt="" src="../images/registration/registration-email.png"><input id="email" type="email" placeholder="Email: " pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required></label>
+                    </p>
+                    <button type="button" class="registration-button-registration">REGISTRATION</button>
+                </form>
+            </section>
+            <section class="field-login">
+                <form>
+                    <h1>Login</h1>
+                    <p>
+                        <label><img alt="" src="../images/registration/registration-login.png"><input class="input-first-name" placeholder="First Name:"></label>
+                    </p>
+                    <p>
+                        <label><img alt="" src="../images/registration/registration-email.png"><input class="input-email" placeholder="Email: "></label>
+                    </p>
+                    <div>
+                      <button type="button" class="registration-button-login">LOGIN</button>
+                      <button type="button" class="registration-button-registration">REGISTRATION</button>
+                    </div>
+                </form>
+            </section>
+            <section class="field-main-game">
+              <article = "ul-content">
+                  <div>
+                      <ul class="game-first-menu">
+                          <li><a href="#">Сhoose a shirt</a>
+                            <ul  class="game-second-menu">
+                                <li class="shirt-one">
+                                  <a href="#"><img alt=""  src="../images/shirt/shirt5.jpg"></a>
+                                </li>
+                                <li class="shirt-two">
+                                  <a href="#"><img alt=""  src="../images/shirt/shirt6.png"></a>
+                                </li>
+                                <li class="shirt-three">
+                                  <a href="#"><img alt=""  src="../images/shirt/shirt7.jpg"></a>
+                                </li>
+                            </ul>
+                          </li>
+                      </ul>
+                  </div>
+                  <div>
+                      <ul class="game-first-menu">
+                          <li><a href="#">Choose format game</a>
+                            <ul  class="game-second-menu">
+                                <li class="number-game">
+                                  <div type="button" >Game mode:<br> 5х2</div>
+                                </li>
+                                <li class="number-game">
+                                  <div type="button" >Game mode:<br> 6х3</div>
+                                </li>
+                                <li class="number-game">
+                                  <div type="button">Game mode:<br> 8х3</div>
+                                </li>
+                            </ul>
+                          </li>
+                      </ul>
+                  </div>
+                  <form class="form-timer" name=MyForm>
+                    <input class="input-timer" name=stopwatch size=10 value="00:00:00.00">
+                  </form>
+                  <div class="div-play-game">
+                      <button type="button" class='play-game' name="button">Play game</button>
+                  </div>
+              </article>
+              <article class="field-game-content">
+                <div class="game-rules">
+                    <div>
+                        <h1>How to play:</h1>
+                      <p>
+                        Memory is a counter game where the object to find pairs.<br>
+                        When the game begins, all pictures are hidden.<br>
+                      </p>
+                    </div>
+                    <br>
+                    <div>
+                        <h1>To play:</h1>
+                      <p>
+                        1. Select two cards to try to match the pictures.<br>
+                        2. If you match the pictures you  can go again.<br>
+                        3. If they don't match it is the computer turn them.<br>
+                        4. The player that finds all pairs wins.<br>
+                        5. Have fun!
+                      </p>
+                    </div>
+                </div>
+                <div class="game-one"></div>
+                <div class="game-two"></div>
+                <div class="game-three"></div>
+              </article>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <section>
+            <div>
+                <h1>Contacts:</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Vkontacte</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="dispatch-to-email">
+                <label>If you have a question? Ask us!</label>
+                <button type="button" class="form-button-Dispatch">Dispatch</button>
+                <br>
+                <div>
+                <input  placeholder="Enter your Email: ">
+                <input  placeholder="Enter your question: ">
+                </div>
+            </div>
+        </section>
+    </footer>
+</section>
+<script src="../Components/App.js"></script>
+<script src="../Components/Registration.js"></script>
+<script src="../Components/Login.js"></script>
+<script src="../Components/Game.js"></script>
+<script src="../Components/Timer.js"></script>
+<script src="../Components/TopPlayers.js"></script>
+<script src="../Components/ScorePlayers.js"></script>
+</body>
+</html>

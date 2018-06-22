@@ -1,0 +1,100 @@
+article {
+  display: flex;
+}
+.img-card {
+  border: 1px blue solid;
+  width: 200px;
+  height: 200px;
+  background:  red;
+}
+
+/* .one {
+  width: 200px;
+  height: 200px;
+  background: red;
+}
+.two {
+  width: 200px;
+  height: 200px;
+  background: blue;
+}
+.three {
+  width: 200px;
+  height: 200px;
+  background: yellow;
+} */
+/* .four {
+  width: 200px;
+  height: 200px;
+  background: green;
+}
+.five {
+  width: 200px;
+  height: 200px;
+  background: black;
+}
+.backDiv {
+  width: 200px;
+  height: 200px;
+  background: black;
+} */
+.img0{
+  width: 200px;
+  height: 200px;
+  background:  red;
+  cursor: default;
+}
+.img1{
+  background: red;
+}
+.img2{
+  background: blue;
+}
+.img3{
+  background: blue;
+}
+.img4{
+  background: yellow;
+}
+.img5{
+  background: yellow;
+}
+
+  .art .img-card.open {
+  transform: rotateY(0);
+  background: #02b3e4;
+  cursor: default;
+  animation-name: flipInY;
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  animation-duration: .75s;
+}
+
+@keyframes flipInY {
+  from {
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
+}
+div[type=0]{
+  background: black;
+}
